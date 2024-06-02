@@ -10,11 +10,11 @@ export const uploadFile = async (req, res) => {
     if (req.file.mimetype !== "text/csv") {
       return res.status(400).send("only csv files are allowed");
     }
-    console.log(req.file);
+    
     const originalname = req.file.originalname;
     const filePath = req.file.path;
 
-    console.log();
+
 
     const newfile = new filesModel({
       filename: req.file.filename,
