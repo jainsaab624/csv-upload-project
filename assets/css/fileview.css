@@ -1,0 +1,48 @@
+body {
+  background-color: #f0f0f0; /* Change body background color */
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px; /* Added padding for spacing */
+}
+
+.search-input {
+  flex: 1; /* Grow to fill available space */
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  background-color: #fff; /* Set input background color */
+  color: #333; /* Set input text color */
+  outline: none; /* Remove input outline */
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+.csv-info {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
