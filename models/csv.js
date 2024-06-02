@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const filesSchema = new mongoose.Schema(
   {
-    filename: {
+    fileName: {
       type: String,
     },
-    filepath: {
+    filePath: {
       type: String,
     },
     file: {
@@ -14,7 +14,13 @@ const filesSchema = new mongoose.Schema(
   },
   {
     timestamps: {
-      options: { timeZone: "Asia/Kolkata" },
+      options: {
+        timeZone: "Asia/Kolkata",
+        hour12: true,
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+      },
     },
   }
 );
