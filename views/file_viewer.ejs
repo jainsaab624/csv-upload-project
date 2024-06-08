@@ -68,10 +68,10 @@
     searchBtn.addEventListener("click", function () {
       const searchText = searchInput.value.trim().toLowerCase();
 
-      var rows = document.querySelectorAll("#dataTable tbody tr");
+      let rows = document.querySelectorAll("#dataTable tbody tr");
       rows.forEach(function (row) {
-        var cells = row.querySelectorAll("td");
-        var found = false;
+        let cells = row.querySelectorAll("td");
+        let found = false;
         cells.forEach(function (cell) {
           if (cell.textContent.toLowerCase().includes(searchText)) {
             found = true;
